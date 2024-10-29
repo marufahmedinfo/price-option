@@ -1,4 +1,4 @@
-import { LineChart as ChartLine, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import { LineChart as ChartLine, Line, CartesianGrid, XAxis, YAxis, Legend, Tooltip } from 'recharts';
 
 const LineChart = () => {
     const marksData = [
@@ -21,9 +21,12 @@ const LineChart = () => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis />
+            <Tooltip />
+          <Legend />
                 <Line dataKey="math" stroke="#8884d8"></Line>
                 <Line dataKey={'physics'} stroke="purple"></Line>
-            </ChartLine>
+                <Line dataKey={'chemistry'} stroke="tomato"></Line>
+            </ChartLine>  
         </div>
     );
 };

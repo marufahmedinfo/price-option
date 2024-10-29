@@ -6,6 +6,7 @@ import DesyNavbar from './components/DesyNavbar/DesyNavbar'
 import StateShow from './components/StateShow/StateShow'
 import PriceOptions from './components/PriceOptions/PriceOptions'
 import LineChart from './components/LineChart/LineChart'
+import Phones from './components/Phones/Phones'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
       <StateShow></StateShow>
 
       <LineChart></LineChart>
+
+      <Phones></Phones>
       
     </div>
     </>
